@@ -44,7 +44,7 @@ Similiarly, `wind_start=number of aisle seats+1` and `mid_start=number of aisle 
 <img src="Given-TestCase.jpg" alt="Given Test Case" width="700"/>
 <img src="Output1.jpg" alt="Output Image 1" width="700"/>
 <img src="Output2.jpg" alt="Output Image 2" width="700"/>
-<img src="Output3.jpg" alt="Output Image 3" width="700"/>
+<img src="Output3-1.jpg" alt="Output Image 3" width="700"/>
 
 ## Time Complexity
 The Time Complexity of proposed solution is **O(nm)** where `n = maximum number of rows and m = sum of all the columns`
