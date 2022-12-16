@@ -17,8 +17,8 @@ The Time Complexity of proposed solution is **O(nm)** where `n = maximum number 
 ## Output Image
 ![Output Image](output.jpg)
 
-- '--' is used to represent empty seats available
-- Vertical Lines ( | ) is used to differentiate between seat segments
+- **'--' is used to represent empty seats available**
+- **Vertical Lines ( | ) is used to differentiate between seat segments**
 
 ## Language Used
 - Python latest version
