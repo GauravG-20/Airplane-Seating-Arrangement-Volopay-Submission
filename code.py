@@ -25,19 +25,22 @@ for i in range(len(list_)):
     max_row_cnt = max(max_row_cnt, list_[i, 1])
     total += list_[i, 0]*list_[i, 1]
     column_list.append(list_[i, 0]) # Store the number of columns of each section 
-    cnt_col += list_[i, 0]
+    cnt_col += list_[i,0]
 
-    if i == 0 or i == len(list_)-1:
+    # If the airplane has only 1 segment of seats 
+    if list_.shape[0]==1:
+        wind+=2*list_[i,1]
+
+    elif i == 0 or i == len(list_)-1:
         wind += list_[i, 1]
         ais += list_[i, 1]
     else:
         ais += 2*list_[i, 1]
 
 # Finding the starting value for each type of seat
-ais_start, wind_start, midd_start = 1, ais+1, ais+wind+1
+ais_start, wind_start, midd_start = 1 if len(column_list) > 1 else 0, ais+1, ais+wind+1
 
 output = np.full((max_row_cnt, cnt_col), 0, int)
-
 
 for i in range(len(output)):
 
@@ -68,9 +71,17 @@ for i in range(len(output)):
                     wind_start += 1
 
             elif c_num == column_list[seg_ptr]-1:
+                    
                 if ais_start <= passengers:
-                    output[i, j] = ais_start
-                    ais_start += 1
+                    
+                    # Condition to check if the airplane has only 1 segment of seat if yes,
+                    # then both ends of the segment would be window column
+                    if len(column_list) == 1:
+                        output[i,j] = wind_start
+                        wind_start+=1
+                    else: # if not then right-most column would be aisle column 
+                        output[i, j] = ais_start
+                        ais_start += 1
             else:
                 if midd_start <= passengers:
                     output[i, j] = midd_start
