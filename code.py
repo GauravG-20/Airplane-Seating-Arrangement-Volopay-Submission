@@ -5,6 +5,11 @@ with open('input.txt','r') as file:
     list_=file.readline().strip()
     passengers=int(file.readline().strip())
 
+# Condition for no input
+if len(list_) == 0:
+    print('\n','No input list is found!!'.center(100))
+    exit()
+
 print(f'\nInputed list of segments in form of Column X Row: {list_} \n\nInputted number of Passengers: {passengers}')
 
 # Converting 1-D list into 2-D list of 2 columns 
