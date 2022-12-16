@@ -42,4 +42,4 @@ The Time Complexity of proposed solution is **O(nm)** where `n = maximum number 
 ## RUN
 
 - Set the directory where the file is stored using `cd` command.
-- Run the file by entering `python run code.py` in IDE command shell.
+- Run the file by entering `python code.py` in IDE command shell.
