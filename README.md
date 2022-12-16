@@ -18,10 +18,11 @@ center seats)
 **Given** - A 2D array that represents the columns and rows - [[3,2], [4,3], [2,3], [3,4]]
 
 ##### Input
-![Input](Question-Input.jpg)
+<img src="Question-Input.jpg" alt="Question Input" width="700"/>
 
 ##### Output
-![Output](Question-Output.jpg)
+<img src="Question-Output.jpg" alt="Question Output" width="700"/>
+
 ## Solution Approach
 1) Firstly, **calculate number of window,aisle and total seats**. With the help of these 3, **number of middle seats is calculated**..
 2) Then we know that starting number for aisle seat would be 1 i.e. `ais_start=1`
@@ -40,10 +41,10 @@ Similiarly, `wind_start=number of aisle seats+1` and `mid_start=number of aisle 
 - **'--' is used to represent empty seats available**
 - **Vertical Lines ( | ) is used to differentiate between seat segments**
 
-1) ![Given Test Case](Given-TestCase.jpg)
-2) ![Output Image 1](Output1.jpg)
-3) ![Output Image 2](Output2.jpg)
-4) ![Output Image 3](Output3.jpg)
+<img src="Given-TestCase.jpg" alt="Given Test Case" width="700"/>
+<img src="Output1.jpg" alt="Output Image 1" width="700"/>
+<img src="Output2.jpg" alt="Output Image 2" width="700"/>
+<img src="Output3.jpg" alt="Output Image 3" width="700"/>
 
 ## Time Complexity
 The Time Complexity of proposed solution is **O(nm)** where `n = maximum number of rows and m = sum of all the columns`
