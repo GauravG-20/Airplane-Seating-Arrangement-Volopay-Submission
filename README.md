@@ -41,9 +41,9 @@ The Time Complexity of proposed solution is **O(nm)** where `n = maximum number 
 
 ## Output Variables
 
-| Variable Name | Description |
-| ------ | ------ |
-| output | Single 2D array which stores either passenger number,'- -' if seat is avaialable or or blank if seat is not available  |
+| Variable Name | Data Type | Description |
+| ------ | ------ | ------ |
+| output | list (int) | Single 2D array which stores either passenger number,0 if seat is avaialable or or -1 if seat is not available  |
 
 ## RUN
 
