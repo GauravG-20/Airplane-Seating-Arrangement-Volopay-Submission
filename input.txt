@@ -1,0 +1,5 @@
+3,2,4,3,2,3,3,4
+30
+
+```Input file where first line is used to store list of Column X Row segment of the seats
+and second line is to store number of passengers in the queue```
