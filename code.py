@@ -1,11 +1,14 @@
 import numpy as np
 
-# To accept input and transforming it into a list
-list_ = input("Enter the array of columns X row  in a single row seperated with \',\': ").strip()
-passengers = int(input("Enter number of passangers: "))
-list_ = list_.split(',')
+# Reading Inputs from the input.txt file 
+with open('input.txt','r') as file:
+    list_=file.readline().strip()
+    passengers=int(file.readline().strip())
+
+print(f'\nInputed list of segments in form of Column X Row: {list_} \n\nInputted number of Passengers: {passengers}')
 
 # Converting 1-D list into 2-D list of 2 columns 
+list_ = list_.split(',')
 list_ = np.reshape(list_, (-1, 2)).astype('int')
 
 max_row_cnt, cnt_col, total, ais, midd, wind = -1, 0, 0, 0, 0, 0
