@@ -1,5 +1,5 @@
 # About Myself
-Hi! My name is **Gaurav Gupta, 3rd year student, currently pursuing B.Tech in Computer Science from Jaypee Institute of Information Technology, Sector 62, Noida.**
+Hi! My name is Gaurav Gupta, 3rd year studen, currently pursuing B.Tech in Computer Science from Jaypee Institute of Information Technology, Sector 62, Noida. 
 
 ## Question
 ##### Airplane Seating Algorithm
@@ -35,14 +35,18 @@ Similiarly, `wind_start=number of aisle seats+1` and `mid_start=number of aisle 
 9) We can fill the passenger according to the segment and column number. For example, `if seg_ptr == 0 and j-start_ptr==0 and wind_start<=passengers` then `output[row,column]=wind_start` and `wind_start=wind_start+1` as **column 0 of segment 0 will always be a window seat.**
 8) Similiarly, we can fill the rest of the segments using the similiar logic.
 
-## Time Complexity
-The Time Complexity of proposed solution is **O(nm)** where `n = maximum number of rows and m = sum of all the columns`
-
-## Output Image
-![Output Image](output.jpg)
-
+## Test Cases
+##### NOTE
 - **'--' is used to represent empty seats available**
 - **Vertical Lines ( | ) is used to differentiate between seat segments**
+
+1) ![Given Test Case](Given-TestCase.jpg)
+2) ![Output Image 1](Output1.jpg)
+3) ![Output Image 2](Output2.jpg)
+4) ![Output Image 3](Output3.jpg)
+
+## Time Complexity
+The Time Complexity of proposed solution is **O(nm)** where `n = maximum number of rows and m = sum of all the columns`
 
 ## Language Used
 - Python latest version
