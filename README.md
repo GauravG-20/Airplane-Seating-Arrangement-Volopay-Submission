@@ -14,6 +14,9 @@ Similiarly, `wind_start=number of aisle seats+1` and `mid_start=number of aisle 
 ## Time Complexity
 The Time Complexity of proposed solution is **O(nm)** where `n = maximum number of rows and m = sum of all the columns`
 
+## Output Image
+![Output Image](output.jpg)
+
 ## Language Used
 - Python latest version
 
