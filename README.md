@@ -1,5 +1,5 @@
 # About Myself
-Hi! My name is Gaurav Gupta, 3rd year studen, currently pursuing B.Tech in Computer Science from Jaypee Institute of Information Technology, Sector 62, Noida. 
+Hi! My name is Gaurav Gupta, 3rd year student, currently pursuing B.Tech in Computer Science from Jaypee Institute of Information Technology, Sector 62, Noida. 
 
 ## Question
 ##### Airplane Seating Algorithm
